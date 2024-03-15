@@ -1,11 +1,12 @@
 import java.util.Scanner;
 public class ex25 {
 	 public static void main(String[] args) {
-	        Scanner scanner = new Scanner(System.in);
+	        Scanner	input = new Scanner(System.in);
 	        System.out.print("Enter the number 1: ");
-	        double a = scanner.nextDouble();
+	        double a = input.nextDouble();
 	        System.out.print("Enter the number 2: ");
-	        double b = scanner.nextDouble();
+	        double b = input.nextDouble();
+			input.close();
 	        double sum = a+b;
 	        double difference = a-b;
 	        double mul = a*b;
