@@ -13,6 +13,7 @@ public class ex65 {
 		for (int i = 0; i < n; i++){
 			arr[i] = scanner.nextInt();
 		}
+		scanner.close();
 		
 		Arrays.sort(arr);
 		int sum = 0;

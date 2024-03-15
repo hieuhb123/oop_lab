@@ -14,6 +14,7 @@ public class ex64 {
         String str_month = scanner.nextLine().trim(); // Trim to remove any leading or trailing whitespaces
         System.out.println("Enter the year: ");
         int year = scanner.nextInt();
+        scanner.close();
         int daysInMonth;
 
         if (str_month.equals("Jan") || str_month.equals("Jan.") || str_month.equals("January") || str_month.equals("1")

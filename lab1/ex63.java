@@ -4,6 +4,7 @@ public class ex63 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int t = input.nextInt();
+        input.close();
 
         for (int i = 1; i <= t; ++i) {
             for (int j = 1; j <= 2 * t - 1; ++j) {
