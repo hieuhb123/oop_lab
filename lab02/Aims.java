@@ -1,5 +1,3 @@
-package lab02;
-
 public class Aims {
     public static void main(String[] args) {
         Cart anOder = new Cart();

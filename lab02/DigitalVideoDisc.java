@@ -1,4 +1,3 @@
-package lab02;
 
 public class DigitalVideoDisc {
     
@@ -27,13 +26,6 @@ public class DigitalVideoDisc {
 
     public double getCost(){
         return cost;
-    }
-    public DigitalVideoDisc(){
-        title = "";
-        category = "";
-        director = "";
-        cost = 0;
-        length = 0;
     }
 
     public DigitalVideoDisc(String tile){

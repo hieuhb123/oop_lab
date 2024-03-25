@@ -1,13 +1,8 @@
-package lab02;
 
 public class Cart {
     public static final int MAX_NUMBER_ODERED = 20;
     private DigitalVideoDisc itemOrdered[] = new DigitalVideoDisc[MAX_NUMBER_ODERED];
-    private int qtyOrdered;
-    
-    public Cart(){
-        qtyOrdered = 0;
-    }
+    private int qtyOrdered = 0;
     
     public void removeDigitalVideoDisc(DigitalVideoDisc disc){
         itemOrdered[0] = disc;
