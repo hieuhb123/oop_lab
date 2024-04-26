@@ -1,5 +1,5 @@
-import src.Cart;
-import src.DigitalVideoDisc;
+import cart.Cart;
+import disc.DigitalVideoDisc;
 
 public class Aims {
     public static void main(String[] args) {

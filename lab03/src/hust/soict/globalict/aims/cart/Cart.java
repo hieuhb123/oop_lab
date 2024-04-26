@@ -1,5 +1,4 @@
 package cart;
-
 import disc.DigitalVideoDisc;
 public class Cart {
     public static final int MAX_NUMBER_ODERED = 20;
@@ -26,5 +25,20 @@ public class Cart {
         for(int i = 0 ; i < qtyOrdered ; i++)
             total = total + itemOrdered[i].getCost();
         return total;
+    }
+
+    public void print(){
+        System.out.println("***********************CART***********************");
+        System.out.println("Ordered Items:");
+        for(int i = 0 ; i < qtyOrdered ; i++){
+            System.out.println(Integer.toString(i+1) + ".DVD-" + this.itemOrdered[i].getTitle() + "-"+ this.itemOrdered[i].getCategory() + "-"+ this.itemOrdered[i].getDirector() + "-"+ this.itemOrdered[i].getLength());
+        }
+        System.out.println("Total cost:" + totalCost());
+        System.out.println("***************************************************");
+    }
+    public String search(String title){
+        for(int i = 0; i < qtyOrdered; i++)
+            if(itemOrdered[i].isMatch(title)) return Integer.toString(i+1);
+        return "no match is found";
     }
 }

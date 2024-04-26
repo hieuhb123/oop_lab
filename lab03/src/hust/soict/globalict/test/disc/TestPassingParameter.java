@@ -1,5 +1,5 @@
-package hust.soict.globalict.test.disc;
-
+import store.Store;
+import disc.DigitalVideoDisc;
 public class TestPassingParameter {
-    
+
 }

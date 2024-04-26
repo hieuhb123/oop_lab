@@ -1,6 +1,6 @@
 package disc;
-
-public class DigitalVideoDisc {
+import media.Disc;
+public class DigitalVideoDisc extends Disc{
     
     private String title;
     private String category;
@@ -48,5 +48,9 @@ public class DigitalVideoDisc {
         this.title = tile;
         this.length = length;
         this.cost = cost;
+    }
+    public Boolean isMatch(String title){
+        if(this.title == title) return true;
+        return false;
     }
 }
