@@ -1,13 +1,7 @@
 package disc;
 import media.Disc;
-public class DigitalVideoDisc extends Disc{
-    
-    private String title;
-    private String category;
-    private String director;
-    private int length;
-    private float cost;
-
+import media.Playable;
+public class DigitalVideoDisc extends Disc implements Playable{
     public String getTitle(){
         return title;
     }
@@ -24,33 +18,28 @@ public class DigitalVideoDisc extends Disc{
         return length;
     }
 
-    public double getCost(){
+    public float getCost(){
         return cost;
     }
 
-    public DigitalVideoDisc(String tile){
-        this.title = tile;
+    public DigitalVideoDisc(String title){
+        super(title);
     }
-    public DigitalVideoDisc (String category, String tile, float cost){
-        this.category = category;
-        this.title = tile;
-        this.cost = cost;
+    public DigitalVideoDisc (String tile, String category, float cost){
+        super(tile, category, cost);
     }
-    public DigitalVideoDisc (String director,String category, String tile, float cost){
-        this.director = director;
-        this.category = category;
-        this.title = tile;
-        this.cost = cost;
+    public DigitalVideoDisc (String tile,String category, String director, float cost){
+        super(tile, category, director, cost);
     }
     public DigitalVideoDisc(String tile, String category, String director, int length, float cost){
-        this.director = director;
-        this.category = category;
-        this.title = tile;
-        this.length = length;
-        this.cost = cost;
+        super(tile, category, director, length, cost);
     }
     public Boolean isMatch(String title){
-        if(this.title == title) return true;
+        if(super.title == title) return true;
         return false;
+    }
+    public void play() {
+        System.out.println("Playing DVD: " + this.getTitle());
+        System.out.println("DVD length: " + this.getLength());
     }
 }

@@ -1,4 +1,3 @@
-package src;
 
 public class Cart {
     public static final int MAX_NUMBER_ODERED = 20;

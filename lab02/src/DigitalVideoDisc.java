@@ -1,4 +1,3 @@
-package src;
 
 public class DigitalVideoDisc {
     
@@ -31,12 +30,12 @@ public class DigitalVideoDisc {
     public DigitalVideoDisc(String tile){
         this.title = tile;
     }
-    public DigitalVideoDisc (String category, String tile, float cost){
+    public DigitalVideoDisc (String tile, String category,  float cost){
         this.category = category;
         this.title = tile;
         this.cost = cost;
     }
-    public DigitalVideoDisc (String director,String category, String tile, float cost){
+    public DigitalVideoDisc (String tile, String director,String category,  float cost){
         this.director = director;
         this.category = category;
         this.title = tile;
