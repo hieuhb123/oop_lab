@@ -1,5 +1,5 @@
 import cart.Cart;
-import disc.DigitalVideoDisc;
+import media.DigitalVideoDisc;
 public class CartTest {
     public static void main(String[] args){
         Cart cart = new Cart();
@@ -12,8 +12,7 @@ public class CartTest {
 
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
         cart.addDigitalVideoDisc(dvd3);
-
         cart.print();
-        System.out.println(cart.search("Starwar"));
+        System.out.println(cart.search("Star war"));
     }
 }

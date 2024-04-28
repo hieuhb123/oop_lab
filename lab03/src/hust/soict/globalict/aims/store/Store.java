@@ -1,5 +1,5 @@
 package store;
-import disc.DigitalVideoDisc;
+import media.DigitalVideoDisc;
 public class Store {
     private DigitalVideoDisc itemsInStore[] = new DigitalVideoDisc[20];
     private int quanity = 0;

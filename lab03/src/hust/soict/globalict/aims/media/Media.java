@@ -1,11 +1,10 @@
 package media;
 
-public class Media {
-    protected int id;
-    protected String title;
-    protected String category;
-    protected float cost;
-
+public abstract class Media {
+    private int id;
+    private String title;
+    private String category;
+    private float cost;
 	public Media(String title){
 		super();
 		this.title = title;
@@ -32,19 +31,19 @@ public class Media {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getTitle() {
+	public String getTTitle() {
 		return title;
 	}
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getCategory() {
+	public String getTCategory() {
 		return category;
 	}
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	public float getCost() {
+	public float getTCost() {
 		return cost;
 	}
 	public void setCost(float cost) {

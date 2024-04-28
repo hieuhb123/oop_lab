@@ -1,13 +1,13 @@
-package disc;
-import media.Disc;
-import media.Playable;
-public class DigitalVideoDisc extends Disc implements Playable{
+package media;
+public class DigitalVideoDisc extends Media implements Playable{
+    private int length;
+    private String director;
     public String getTitle(){
-        return title;
+        return getTTitle();
     }
 
     public String getCategory(){
-        return category;
+        return getTCategory();
     }
 
     public String getDirector(){
@@ -19,7 +19,7 @@ public class DigitalVideoDisc extends Disc implements Playable{
     }
 
     public float getCost(){
-        return cost;
+        return getTCost();
     }
 
     public DigitalVideoDisc(String title){
@@ -29,13 +29,16 @@ public class DigitalVideoDisc extends Disc implements Playable{
         super(tile, category, cost);
     }
     public DigitalVideoDisc (String tile,String category, String director, float cost){
-        super(tile, category, director, cost);
+        super(tile, category, cost);
+        this.director = director;
     }
     public DigitalVideoDisc(String tile, String category, String director, int length, float cost){
-        super(tile, category, director, length, cost);
+        super(tile, category, cost);
+        this.director = director;
+        this.length = length;
     }
     public Boolean isMatch(String title){
-        if(super.title == title) return true;
+        if(this.getTitle() == title) return true;
         return false;
     }
     public void play() {
