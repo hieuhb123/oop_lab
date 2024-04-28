@@ -37,6 +37,11 @@ public class DigitalVideoDisc extends Media implements Playable{
         this.director = director;
         this.length = length;
     }
+    public DigitalVideoDisc(int id, String title, String category, String director, int length, float cost) {
+	    super(id, title, category, cost);
+        this.length = length;
+        this.director = director;
+	}
     public Boolean isMatch(String title){
         if(this.getTitle() == title) return true;
         return false;
