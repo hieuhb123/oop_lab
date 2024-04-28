@@ -19,8 +19,8 @@ public class Cart {
         if(qtyOrdered >= MAX_NUMBER_ODERED - 2) System.out.println("The cart is almost full");
     }
 
-    public double totalCost(){
-        double total = 0;
+    public float totalCost(){
+        float total = 0;
         for(int i = 0 ; i < qtyOrdered ; i++)
             total = total + itemOrdered[i].getCost();
         return total;

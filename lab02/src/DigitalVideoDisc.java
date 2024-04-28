@@ -23,7 +23,7 @@ public class DigitalVideoDisc {
         return length;
     }
 
-    public double getCost(){
+    public float getCost(){
         return cost;
     }
 
