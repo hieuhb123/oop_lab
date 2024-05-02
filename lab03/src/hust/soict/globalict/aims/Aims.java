@@ -27,7 +27,7 @@ public class Aims {
         System.out.println("0. Exit");
         System.out.println("--------------------------------");
         System.out.println("Please choose a number: 0-1-2-3");
-        }
+    }
 
     public static void storeMenu() {
 
@@ -41,7 +41,7 @@ public class Aims {
         System.out.println("--------------------------------");
         System.out.println("Please choose a number: 0-1-2-3-4");
         
-        }
+    }
 
     public static void mediaDetailsMenu() {
         System.out.println("Options: ");
@@ -51,7 +51,7 @@ public class Aims {
         System.out.println("0. Back");
         System.out.println("--------------------------------");
         System.out.println("Please choose a number: 0-1-2");
-        }
+    }
     public static void cartMenu() {
         System.out.println("Options: ");
         System.out.println("--------------------------------");
@@ -63,5 +63,5 @@ public class Aims {
         System.out.println("0. Back");
         System.out.println("--------------------------------");
         System.out.println("Please choose a number: 0-1-2-3-4-5");
-        }
+    }
 }
