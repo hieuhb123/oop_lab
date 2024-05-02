@@ -1,30 +1,33 @@
 package store;
-import media.DigitalVideoDisc;
+import java.util.ArrayList;
+
+import media.Media;
 public class Store {
-    private DigitalVideoDisc itemsInStore[] = new DigitalVideoDisc[20];
-    private int quanity = 0;
-    public void addDVD(DigitalVideoDisc digitalVideoDisc){
-        this.itemsInStore[quanity] = digitalVideoDisc;
-        this.quanity++;
+    private ArrayList<Media> itemsInStore;
+    public void addMedia(Media media){
+        if(itemsInStore.contains(media)){
+            System.out.println("This media existed!");
+        }
+        else{
+            this.itemsInStore.add(media);
+            System.out.println("Media added");
+        }
+    } 
+    public void removeMedia(Media media){
+        if(itemsInStore.contains(media)){
+            this.itemsInStore.remove(media);
+            System.out.println("Media removed!");
+        }
+        else{
+            System.out.println("This media does not exist!");
+        }
     }
 
-    public void removeDVD(DigitalVideoDisc digitalVideoDisc){
-        int index = 19;
-        for(int i = 0; i < quanity; i++){
-            if(itemsInStore[i].isMatch(digitalVideoDisc.getTitle())){
-                index = i;
-                break;
-            }
-        }
-        for(int i = index; i < quanity - 1; i++){
-            itemsInStore[i] = itemsInStore[i+1];
-        }
-    }
     public void print(){
         System.out.println("***********************Store***********************");
         System.out.println("Items: ");
-        for(int i = 0 ; i < quanity ; i++){
-            System.out.println(Integer.toString(i+1) + ".DVD-" + this.itemsInStore[i].getTitle() + "-"+ this.itemsInStore[i].getCategory() + "-"+ this.itemsInStore[i].getDirector() + "-"+ this.itemsInStore[i].getLength());
+        for(Media e : itemsInStore){
+            System.out.println(Integer.toString(e.getId()) + ".DVD-" + e.getTTitle() + "-"+ e.getTCategory() + "-"+ e.getTCost());
         }
         System.out.println("***************************************************");
     }
