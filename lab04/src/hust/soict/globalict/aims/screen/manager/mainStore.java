@@ -6,11 +6,13 @@ import java.util.List;
 import hust.soict.globalict.aims.media.Book;
 import hust.soict.globalict.aims.media.CompactDisc;
 import hust.soict.globalict.aims.media.DigitalVideoDisc;
+import hust.soict.globalict.aims.media.Track;
 import hust.soict.globalict.aims.store.Store;
 
 public class mainStore {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		Store store = new Store();
         
     	DigitalVideoDisc dvd1 = new DigitalVideoDisc(1, "The lion King", "Animation", "Roger Allers", 87, 19.95f);

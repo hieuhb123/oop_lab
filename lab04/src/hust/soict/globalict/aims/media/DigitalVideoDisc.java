@@ -1,6 +1,10 @@
 package hust.soict.globalict.aims.media;
 
+//import AimsProject.hust.soict.globalict.aims.media.Disc;
+//import AimsProject.hust.soict.globalict.aims.media.Playable;
+
 public class DigitalVideoDisc extends Disc implements Playable{
+	// Constructors
 	public DigitalVideoDisc(String title) {
 		super(title);
 	}
@@ -17,6 +21,7 @@ public class DigitalVideoDisc extends Disc implements Playable{
 	    super(title, category, director, length, cost);
 	}
 	
+	// Add for the id
 	public DigitalVideoDisc(int id, String title, String category, String director, int length, float cost) {
 	    super(id, title, category, director, length, cost);
 	}
