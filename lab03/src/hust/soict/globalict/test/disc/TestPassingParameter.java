@@ -1,5 +1,5 @@
 import store.Store;
-import disc.DigitalVideoDisc;
+import media.DigitalVideoDisc;
 public class TestPassingParameter {
 
 }
