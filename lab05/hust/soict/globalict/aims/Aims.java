@@ -25,12 +25,12 @@ public class Aims {
 		store.addMedia(dvd3);
 		
 		List <String> author1 = new ArrayList<String>();
-		author1.add("Munwind");
-		author1.add("Lehau");
+		author1.add("HIEU");
+		author1.add("GIang");
 		
 		List <String> author2 = new ArrayList<String>();
-		author2.add("Minh");
-		author2.add("Kien");
+		author2.add("Vuong");
+		author2.add("Duong");
 		
 		Book book1 = new Book(3, "LeHau finds his first love", "No hope", 99.99f, author1);
 		store.addMedia(book1);
